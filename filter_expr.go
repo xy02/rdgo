@@ -2,6 +2,10 @@ package rdgo
 
 import "time"
 
+type Expr map[Operator]Data
+
+type Operator = string
+
 const (
 	F   Operator = "$f"
 	EQ  Operator = "$eq"
@@ -10,8 +14,6 @@ const (
 	LT  Operator = "$lt"
 	LTE Operator = "$lte"
 )
-
-type Expr map[Operator]Data
 
 func (expr Expr) Match(target Data, ctx *Filter) bool {
 	for op, v := range expr {
