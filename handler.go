@@ -7,4 +7,4 @@ type Handler interface {
 	OnDestroy(func())
 }
 
-type Data interface{}
+type Data = interface{}
