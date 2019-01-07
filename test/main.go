@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	r "github.com/xy02/rdgo"
+	r "github.com/xy02/rego"
 )
 
 type m map[string]interface{}

@@ -1,1 +1,1 @@
-module github.com/xy02/rdgo
+module github.com/xy02/rego
